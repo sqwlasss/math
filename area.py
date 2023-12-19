@@ -14,19 +14,7 @@ def area_below_x_axis(a, b, c):
 
     # Integrate the absolute value of the function over the appropriate interval
     area, error = quad(lambda x: abs(f(x)) if f(x) < 0 else 0, -np.inf, np.inf)
-
-    return area, error
-
-def quadratic_function(x, a, b, c):
-    return a * x ** 2 + b * x + c
-
-
-def area_below_x_axis(a, b, c):
-    # Define the quadratic function
-    f = lambda x: quadratic_function(x, a, b, c)
-
-    # Integrate the absolute value of the function over the appropriate interval
-    area, error = quad(lambda x: abs(f(x)) if f(x) <= 0 else 0, -np.inf, np.inf)
+    # -np.inf, np.inf границы
 
     return area, error
 
