@@ -23,7 +23,7 @@ def plot_quadratic_with_shading(a, b, c):
     # ПРИМЕР КВАДРАТНОГО УРАВНЕНИЯ
     y = a * x ** 2 + b * x + c
 
-    plt.fill_between(x, y, where=(y < 0), color='gray', alpha=0.5, label='Area Below x-axis')
+    plt.fill_between(x, y, where=(y < 0), color='gray', alpha=0.5, label='Площадь под Ox')
 
     plt.plot(x, y, label=f'{a}x^2 + {b}x + {c}')
 
